@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTRM System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/remo/add.css">
+</head> 
+<body>
+    <div class="sidebar">
+
+        <div class="sidebar-header">
+            <img src="../img/essu logo1.png" alt="Logo">
+            <h1>Document Tracking and Record Management System</h1>
+        </div>
+
+        <button class="add-documents-btn"><a href="/docs/add">+ ADD DOCUMENTS</a></button>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="/option/docs"><i class="fas fa-list-alt"></i> Documents</a></li>
+                <li><a href="/docs/incoming"><i class="fas fa-inbox"></i> To Receive</a></li>
+                <li><a href="/docs/incoming/outgoing"><i class="fas fa-paper-plane"></i> Outgoing</a></li>
+                <li><a href="/docs/incoming/outgoing/pending"><i class="fas fa-share"></i> Pending for Release</a></li>
+                <li><a href="/docs/incoming/outgoing/pending/received"><i class="fas fa-upload"></i> Received / Release</a></li>
+                <li><a href="/docs/incoming/outgoing/pending/received/track"><i class="fas fa-barcode"></i> Track</a></li>
+                <li><a href="#"><i class="fas fa-archive"></i> Archive</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> My Settings</a></li>
+            </ul>
+        </nav>
+        <button class="logout-btn">Log Out</button>
+    </div>
+
+    <div class="main-content">
+
+        <div class="form-container">
+            <h2>+ NEW DOCUMENTS</h2>
+            <form>
+                <div class="form-group">
+                    <label for="requisitioner">REQUISITIONER <span class="required">*</span></label>
+                    <input type="text" id="requisitioner" placeholder="Enter requisitioner" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="title">TITLE <span class="required">*</span></label>
+                    <input type="text" id="title" placeholder="Enter title" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="content">CONTENT <span class="required">*</span></label>
+                    <textarea id="content" rows="4" placeholder="Enter content" required></textarea>
+                </div>
+    
+                <div class="form-group">
+                    <label for="type">TYPE <span class="required">*</span></label>
+                    <select id="type" required>
+                        <option value="">Select referral</option>
+                        <option value="">File</option>
+                        <option value="">Come for a conferrence</option>
+                        <option value="">Prepare report</option>
+                        <option value="">Review and give comments</option>
+                        <option value="">Sign the attached documents</option>
+                        <option value="">Take note and pass to others</option>
+                        <option value="">Disseminate</option>
+                        <option value="">Take appropriate action</option>
+                        <option value="">Others</option>
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <label for="referral">REFERRAL <span class="higher-ups">* for higher-up position only</span></label>
+                    <select id="referral">
+                        <option value="">Select referral</option>
+                        <option value="">File</option>
+                        <option value="">Come for a conferrence</option>
+                        <option value="">Prepare report</option>
+                        <option value="">Review and give comments</option>
+                        <option value="">Sign the attached documents</option>
+                        <option value="">Take note and pass to others</option>
+                        <option value="">Disseminate</option>
+                        <option value="">Take appropriate action</option>
+                        <option value="">Others</option>
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <label for="remarks">REMARKS</label>
+                    <textarea id="remarks" rows="2" placeholder="Enter remarks"></textarea>
+                </div>
+    
+                <div class="form-buttons">
+                    <button type="reset" class="cancel-btn">CANCEL</button>
+                    <button type="submit" class="create-btn">CREATE</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

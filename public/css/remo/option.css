@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #F0F4F9; /* Light grey background */
+    height: 100%;
+}
+
+/* Header */
+header {
+    background-color: #024d05;
+    height: 50px;
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 50px); /* Adjust for header height */
+}
+
+/* Content Styling */
+.content {
+    background-color: white;
+    padding: 40px;
+    width: 700px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left Content Styling for Logo and Title */
+.left-content {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Logo */
+.logo {
+    width: 300px; /* Adjust the size to match the image */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Main Heading (Document Tracking) */
+h1 {
+    font-size: 30px;
+    color: #02530b;
+    line-height: 1.4; /* Adjust line spacing */
+    margin-top: 0;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+/* Buttons */
+.menu-button {
+    background-color: #024d05;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 14px;
+    text-align: left;
+    border-radius: 5px;
+    width: 300px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+.menu-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-button:hover {
+    background-color: #02610a;
+}
